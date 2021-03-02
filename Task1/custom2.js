@@ -11,7 +11,7 @@ let tableHeaders= ['id','name', 'class','age','degree','actions']
 let actions = [
     {txt:'delete', classes:'btn btn-danger m-1'},
     {txt:'edit', classes:'btn btn-warning m-1'},
-    {txt:'add balnce', classes:'btn btn-info m-1'},
+    {txt:'add degree', classes:'btn btn-info m-1'},
     {txt:'withdraw', classes:'btn btn-primary m-1'},
 ]
 showHideBtn.addEventListener('click', function(e){
@@ -84,12 +84,12 @@ function deleteCustomer(index){
 }
 function balanceCustomer(index){
     let newBal = Number(prompt('enter balance'))
-    customers[index].balance += newBal
+    customers[index].degree += newBal
     showCustomers()
 }
 function withdrawCustomer(index){
     let newBal = Number(prompt('enter balance'))
-    customers[index].balance -= newBal
+    customers[index].degree -= newBal
     showCustomers()
     
 }
